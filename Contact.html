@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Divyraj Solanki" />
+        <title>Goals</title>
+        <link rel="stylesheet" href="Style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="Index.html">home</a></li>
+                    <li><a href="About.html">about</a></li>
+                    <li><a href="Goals.html">education</a></li>
+                    <li><a href="Contact.html">contact</a></li>
+                </ul>
+            </nav>   
+        </header>
+        <h1 class="link">let's link!</h1>
+        <section class="Form">
+            
+
+
+            <div class="contact-content">
+                <form action="https://httpbin.org/post" class="contact-form" id="contact-form" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder=" enter your name" class="name format">
+
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" placeholder=" email address" class="email format">
+
+                    <label for="address">Current Address:</label>
+                    <textarea name="address" id="address" cols="30" rows="2" placeholder=" Enter your address" class="address"></textarea>
+
+                    <label for="name">City:</label>
+                    <input class="format" type="text" id="city" name="city" list="suggestions" placeholder="Enter your City">
+                    <datalist id="suggestions">
+                        <option label="Barrie" value="Barrie"></option>
+                        <option label="Calgary" value="Calgary"></option>
+                        <option label="Chibougamau" value="Chibougamau"></option>
+                        <option label="Edmonton" value="Edmonton"></option>
+                        <option label="Hamilton" value="Hamilton"></option>
+                        <option label="Ottawa" value="Ottawa"></option>
+                        <option label="Montreal" value="Montreal"></option>
+                        <option label="Scarborough" value="Scarborough"></option>
+                        <option label="Toronto" value="Toronto"></option>
+                        <option label="Vancouver" value="Vancouver"></option>
+                        <option label="Winnipeg" value="Winnipeg"></option>
+                    </datalist>
+
+                    <label for="pCode">Postal Code:</label>
+                    <input name="Postal_Code" type="text" id="pCode" class="format" placeholder="Postal Code">
+
+                    <br>
+                    <div class="radio-btns">
+                        <label for="purpose">What is the purpose of this message?</label><br><br>
+                        <input type="radio" id="question" name="purpose" value="question">
+                        <label for="question">Question</label><br>
+                        <input type="radio" id="comment" name="purpose" value="comment">
+                        <label for="comment">Comment</label><br>
+                        <input type="radio" id="hiring" name="purpose" value="hiring">
+                        <label for="hiring">Hiring</label>
+                    </div>
+                    <br>
+
+                    <label for="message">Message for me:</label>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter your message..." class="address"></textarea>
+
+                    <label for="field">What is your field of work?</label>
+                    <select name="field" id="field" size="5">
+                        <option value="Engineering, Manufacturing, &amp; Technology" selected="">Engineering, Manufacturing, &amp; Technology</option>
+                        <option value="Business, Management, &amp; Administration">Business, Management, &amp; Administration</option>
+                        <option value="Communications &amp; Information Systems">Communications &amp; Information Systems</option>
+                        <option value="Agriculture, Food, &amp; Natural Resources">Agriculture, Food, &amp; Natural Resources</option>
+                        <option value="Health Science Technology">Health Science Technology</option>
+                        <option value="Human Services">Human Services</option>
+                        <option value="Other">Other</option>
+                     </select>                       
+
+                     <div class="submit">
+                        <input name="submit" id="send" type="submit" value="send!">
+                    </div>
+                    <div id="error"></div>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
